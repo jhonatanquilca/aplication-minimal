@@ -54,7 +54,7 @@
                     <!-- Branding -->
                     <div class="navbar-header col-md-2">
                         <a class="navbar-brand" href="<?php print Yii::app()->baseUrl . '/'; ?>" >
-                            <strong>MIN</strong>IMAL
+                            <strong>Aplicaci&oacute;n</strong> Minimal
                         </a>
                         <div class="sidebar-collapse">
                             <a href="#">
@@ -343,11 +343,11 @@
                                     <?php if (!Yii::app()->user->isGuest): ?>
                                         <li><?php echo CHtml::link('<i class="fa fa-user"></i>&nbsp;&nbsp;Mi Cuenta', array('/cruge/ui/editprofile')) ?></li>
                                         <?php if (Yii::app()->user->checkAccess('admin')): ?>
-                                            <li><?php echo CHtml::link('<i class="fa fa-cog"></i>&nbsp;&nbsp;Administración', Yii::app()->user->ui->userManagementAdminUrl) ?></li>
+                                            <li><?php echo CHtml::link('<i class="fa fa-cog"></i>&nbsp;&nbsp;AdministraciÃ³n', Yii::app()->user->ui->userManagementAdminUrl) ?></li>
                                         <?php endif; ?>
-                                        <li><?php echo CHtml::link('<i class="fa fa-power-off"></i>&nbsp;&nbsp;Cerrar Sesión', Yii::app()->user->ui->logoutUrl) ?></li>
+                                        <li><?php echo CHtml::link('<i class="fa fa-power-off"></i>&nbsp;&nbsp;Cerrar SesiÃ³n', Yii::app()->user->ui->logoutUrl) ?></li>
                                     <?php else: ?>
-                                        <li><?php echo CHtml::link('<i class="fa fa-power-off"></i>&nbsp;&nbsp;Iniciar Sesión', Yii::app()->user->ui->loginUrl) ?></li>
+                                        <li><?php echo CHtml::link('<i class="fa fa-power-off"></i>&nbsp;&nbsp;Iniciar SesiÃ³n', Yii::app()->user->ui->loginUrl) ?></li>
                                     <?php endif; ?>
 
 
