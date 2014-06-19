@@ -11,12 +11,12 @@ class Menu {
                 'url' => Yii::app()->homeUrl,
                 'itemOptions' => array('class' => 'active')
             ),
-            array('label' => '<i class="fa fa-pencil"></i>Con sun menu <b class="fa fa-plus dropdown-plus"></b>',
+            array('label' => '<i class="fa fa-pencil"></i>Administracion <b class="fa fa-plus dropdown-plus"></b>',
                 'url' => '#',
                 'itemOptions' => array('class' => 'dropdown'),
                 'linkOptions' => array('class' => 'dropdown-toggle', 'data-toggle' => 'dropdown',),
                 'items' => array(
-                    array('label' => '<i class="fa fa-caret-right"></i>Llamadas', 'url' => array('/modulo/controlador/accion-opcional'), 'access' => 'action_llamadaReporte_admin', 'active_rules' => array('module' => 'llamadas', 'controller' => 'llamadaReporte'),),
+                    array('label' => '<i class="fa fa-caret-right"></i>Personas', 'url' => array('/persona/persona/'), 'access' => 'action_llamadaReporte_admin', 'active_rules' => array('module' => 'llamadas', 'controller' => 'llamadaReporte'),),
                 ),
             ),
 //            array('label' => '<a href="#"><i class="icon-edit"></i> Cuentas</a>', 'url' => array('/tmp/ejemplo/admin'), 'access' => 'action_cuenta_admin', 'active_rules' => array('module' => 'crm', 'controller' => 'cuenta')),
