@@ -22,10 +22,6 @@
             ));
             ?>
 
-            
-
-
-
             <div class="form-group ">
                 <?php echo $form->label($model, 'ci', array('label' => 'CI <span class="required">*</span>', 'class' => 'col-sm-4 control-label')) ?>
                 <!--<span class="required">*</span>-->
