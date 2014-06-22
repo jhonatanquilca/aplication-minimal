@@ -377,7 +377,7 @@
                                                         </li>-->
                             <!--INICIO MENU PRINCIPAL-->
                             <li class="navigation" id="navigation">
-                                <!--<a href="#" class="sidebar-toggle" data-toggle="#navigation">Navigation <i class="fa fa-angle-up"></i></a>-->
+                                <a href="#" class="sidebar-toggle" data-toggle="#navigation">Navigation <i class="fa fa-angle-up"></i></a>
                                 <?php
                                 $this->widget('zii.widgets.CMenu', array(
                                     'items' => /* $this->admin ? Menu::getAdminMenu($this) : */Menu::getMenu($this), //                         
@@ -894,8 +894,8 @@
 
         <section class="videocontent" id="video"></section>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <!--<script src="http://code.jquery.com/jquery.js"></script>-->
-        <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/jquery.js"></script>
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!--<script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/jquery.js"></script>-->
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/vendor/bootstrap/bootstrap.min.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->theme->baseUrl; ?>/assets/js/vendor/mmenu/js/jquery.mmenu.min.js"></script>
