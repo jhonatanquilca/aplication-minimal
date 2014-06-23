@@ -17,19 +17,20 @@
                 'type' => 'horizontal',
                 'id' => 'persona-form',
                 'enableAjaxValidation' => true,
-                'clientOptions' => array('validateOnSubmit' => false, 'validateOnChange' => true,),
-                'enableClientValidation' => false,
+                'clientOptions' => array('validateOnSubmit' => true, 'validateOnChange' => false,),
+                'enableClientValidation' => true,
             ));
             ?>
+
 
             <div class="form-group ">
                 <?php echo $form->label($model, 'ci', array('label' => 'CI <span class="required">*</span>', 'class' => 'col-sm-4 control-label')) ?>
                 <!--<span class="required">*</span>-->
                 <div class="col-sm-8">
                     <?php echo $form->textField($model, 'ci', array('maxlength' => 10, 'class' => 'form-control ')) ?>
-                    <?php echo $form->error($model,'ci') ?>
+                    <?php echo $form->error($model, 'ci') ?>
                 </div>
-                
+
             </div>
             <div class="form-group ">
                 <?php echo $form->label($model, 'nombre', array('class' => 'col-sm-4 control-label')) ?>
@@ -56,7 +57,7 @@
             <div class="form-group">
                 <?php echo $form->label($model, 'domicilio', array('label' => 'Estado <span class="required">*</span>', 'class' => 'col-sm-4 control-label')) ?>
                 <div class="col-sm-8">
-                    <?php echo $form->dropDownList($model, 'estado', array('Casado/a' => 'Casado/a', 'Soltero/a' => 'Soltero/a', 'viudo/a' => 'viudo/a',),array('class'=>'form-control ')) ?>
+                    <?php echo $form->dropDownList($model, 'estado', array('Casado/a' => 'Casado/a', 'Soltero/a' => 'Soltero/a', 'viudo/a' => 'viudo/a',), array('class' => 'form-control ')) ?>
 
                 </div>    
             </div>    
@@ -72,9 +73,9 @@
                     <?php
                     $this->widget('bootstrap.widgets.TbButton', array(
                         //'buttonType'=>'submit',
-                        
+
                         'label' => Yii::t('AweCrud.app', 'Cancel'),
-                        'htmlOptions' => array('onclick' => 'javascript:history.go(-1)','class'=>'btn btn-default')
+                        'htmlOptions' => array('onclick' => 'javascript:history.go(-1)', 'class' => 'btn btn-default')
                     ));
                     ?>
                 </div>

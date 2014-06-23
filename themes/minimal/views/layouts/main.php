@@ -387,7 +387,7 @@
                                     'activeCssClass' => 'active open',
                                     'htmlOptions' => array('class' => 'menu'),
                                     //class  para el submenu
-                                    'submenuHtmlOptions' => array('class' => 'dropdown-menu animated fadeInLeft')
+                                    'submenuHtmlOptions' => array('class' => 'dropdown-menu ')
                                 ));
                                 ?>
 
@@ -400,6 +400,7 @@
                                                             </li>
                                                             </ul>
                                                             </li>-->
+                                </li>
                                 <!--END MENU PRINCIPAL-->
                                 <!--EXTRA SIDEBAR-->
                             <li class="summary collapsed" id="order-summary">
