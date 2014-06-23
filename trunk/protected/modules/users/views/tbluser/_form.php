@@ -7,7 +7,7 @@
                 <a href="#" class="remove"><i class="fa fa-times"></i></a>
             </div>
         </div>
-        <hr/>
+<!--        <hr/>-->
         <div class="tile-body">
             <?php
             /** @var TbluserController $this */

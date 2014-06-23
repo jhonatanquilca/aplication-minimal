@@ -50,12 +50,12 @@
                 <?php echo $form->label($model, 'domicilio', array('label' => 'Domicilio <span class="required">*</span>', 'class' => 'col-sm-4 control-label')) ?>
                 <div class="col-sm-8">
                     <?php echo $form->textField($model, 'domicilio', array('maxlength' => 50, 'class' => 'form-control')) ?>
-
+                    <?php echo $form->error($model, 'domicilio') ?>
                 </div>
             </div>
 
             <div class="form-group">
-                <?php echo $form->label($model, 'domicilio', array('label' => 'Estado <span class="required">*</span>', 'class' => 'col-sm-4 control-label')) ?>
+                <?php echo $form->label($model, 'estado', array('label' => 'Estado <span class="required">*</span>', 'class' => 'col-sm-4 control-label')) ?>
                 <div class="col-sm-8">
                     <?php echo $form->dropDownList($model, 'estado', array('Casado/a' => 'Casado/a', 'Soltero/a' => 'Soltero/a', 'viudo/a' => 'viudo/a',), array('class' => 'form-control ')) ?>
 
