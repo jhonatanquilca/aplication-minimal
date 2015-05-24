@@ -1,0 +1,1 @@
+Esta aplicación esta adaptada a el tema Minimal
